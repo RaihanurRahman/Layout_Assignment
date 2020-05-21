@@ -2,5 +2,7 @@
 
 Screen Shot of Design:
 
+Attach to the img folder.
+
 
 
