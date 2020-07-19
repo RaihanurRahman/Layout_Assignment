@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id="btn">Toggle</button>
+	<p id="test">Sample Text</p>
+	<script>
+		function testClosure(){
+			var toggled = false;
+			document.getElementById('btn').addEventListener( 'click', () => {
+					if(!toggled){
+						toggled = true;
+						document.getElementById("test").style.display = "none";
+						return;
+					}
+					if(toggled){
+						toggled = false;
+						document.getElementById("test").style.display = "block";
+						return;
+					}
+				}
+			);
+		}
+		testClosure();
+	</script>
+</body>
+</html>
